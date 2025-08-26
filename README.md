@@ -9,11 +9,12 @@ This repo uses a GPL-3.0 License (check out https://choosealicense.com/ for more
 
 # Avatars
 This is a list of all the avatars I have in this repository:
-- Black Hole (Uses Confetti)
+- Black Hole (Uses Confetti) _Turns you into a floating black hole_
 
 # Assets
 This is a list of all the assets I have in this repository:
-- Black Hole Companion (Uses Confetti)
+- Black Hole Companion (Uses Confetti) _Black hole that follows you around_
+- Black Hole Asset (Uses Confetti) _Model and script you can use for whatever you want_
 
 # Scripts/APIs
 This is a list of all the scripts or APIs I have in this repository:
