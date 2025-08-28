@@ -83,7 +83,7 @@ function events.tick()
 
     confetti.newParticle(
         "black_hole",
-        MODEL.World.center:partToWorldMatrix():apply() + vector * 2,
+        vector * 2,
         -vector*0.03,
         {
             emissive=true,
@@ -167,6 +167,9 @@ function events.render(delta)
 
     -- Interpolate position to the player
     MODEL.World:setPos(lerp(MODEL.World:getPos(), player:getPos()*16+vec(0, 16, 0), 0.1*delta))
+
+    -- Anchor particles to the black hole
+    confetti.modelinstances:setPos(MODEL.World:getPos())
 end
 
 
