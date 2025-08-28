@@ -39,7 +39,7 @@ function events.tick()
     -- I had to modify confetti a little to remove a white flicker for the first frame the particle existed
     confetti.newParticle(
         "black_hole",
-        MODEL.center:partToWorldMatrix():apply() + vector * 2,
+        vector * 2,
         -vector*0.03,
         {
             emissive=true,
@@ -109,6 +109,9 @@ function events.render(delta, context)
     MODEL.center:setColor(centerColor)
     MODEL.outline:setColor(outlineColor)
     MODEL.ring:setColor(ringColor)
+
+    -- Anchor particles to the black hole
+    confetti.modelinstances:setPos(MODEL.center:partToWorldMatrix():apply()*16)
 end
 
 
