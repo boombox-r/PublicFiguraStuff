@@ -222,4 +222,5 @@ function events.RENDER(delta, context, matrix)
     end
 end
 
+Confetti.modelinstances = modelinstances
 return Confetti
